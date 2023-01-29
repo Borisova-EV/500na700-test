@@ -1,0 +1,36 @@
+.link {
+  position: relative;
+  color: inherit;
+  transition: color 0.3 ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 0;
+    height: 1px;
+    background-color: $color-default-white;
+    transition: width 0.3s ease;
+  }
+
+  @include hover-focus {
+    color: $color-screamin-green;
+
+    &:active {
+      color: $color-default-white;
+
+      &::after{
+        width: 100%;
+      }
+    }
+   }
+
+   &:active {
+    color: $color-default-white;
+
+    &::after{
+      width: 100%;
+    }
+  }
+}
