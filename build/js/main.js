@@ -1,3 +1,5 @@
-import {header} from './modules/header';
+import './vendor/swiper';
+import { initSlider } from './modules/init-slider';
 
-header();
+initSlider();
+
