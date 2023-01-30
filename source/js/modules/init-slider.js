@@ -10,6 +10,7 @@ const initSlider = () => {
     spaceBetween: 20,
     centeredSlides: true,
     loop: true,
+    initialSlide: 1,
 
     navigation: {
       nextEl: slider.querySelector('[data-slider-next]'),
