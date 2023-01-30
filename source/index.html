@@ -280,6 +280,34 @@
         </ul>
       </div>
     </section>
+    <section class="subscription">
+      <div class="container">
+        <h2 class="title subscription__title">Подпишись</h2>
+        <p class="subscription__text">Отправляем анонсы новых статей, выпусков и трансляций</p>
+        <form class="subscription__form" action="#" method="post">
+          <div class="subscription__container">
+            <div class="subscription__wrapper">
+              <div class="subscription__input-container">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+              </div>
+              <div class="subscription__input-container">
+                <input type="text" name="tel" id="tel" placeholder="Телефон" data-mask>
+              </div>
+            </div>
+            <div class="subscription__wrapper">
+              <div class="subscription__input-container">
+                <input type="date" name="date" id="date" placeholder="11.02.2022" required>
+              </div>
+              <div class="subscription__input-container">
+                <input type="datetime" name="time" id="time" placeholder="15:00">
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="subscription__submit">Подписаться</button>
+        </form>
+      </div>
+    </section>
   </main>
   <script src="js/main.min.js"></script>
 </body>

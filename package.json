@@ -30,6 +30,7 @@
     "webpack-stream": "5.2.1"
   },
   "dependencies": {
+    "imask": "^6.4.3",
     "swiper": "^8.1.0"
   },
   "scripts": {
