@@ -1,6 +1,10 @@
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 1240px;
+  max-width: 1300px;
   padding: 0 30px;
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
 }

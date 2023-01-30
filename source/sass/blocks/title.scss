@@ -1,6 +1,12 @@
 .title {
   margin: 0;
+  font-weight: 500;
   font-size: 80px;
   line-height: 85px;
   letter-spacing: -0.03em;
+
+  @include vp-767 {
+    font-size: 40px;
+    line-height: 85px;
+  }
 }

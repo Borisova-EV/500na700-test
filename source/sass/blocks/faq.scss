@@ -1,12 +1,25 @@
 .faq {
   margin-bottom: 100px;
-  
+
+  @include vp-767 {
+    margin-bottom: 79px;
+  }
+
   .container {
     display: flex;
+
+    @include vp-767 {
+      display: block;
+    }
   }
 
   &__title.title {
     margin-right: 98px;
+
+    @include vp-767 {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
   }
 
   &__content {
@@ -24,12 +37,20 @@
     user-select: none;
     transition: opacity 0.3s ease;
 
+    @include vp-767 {
+      padding-bottom: 20px;
+    }
+
     @include hover-focus {
       opacity: 0.7;
     }
 
     &:not(:last-child) {
       margin-bottom: 30px;
+
+      @include vp-767 {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -55,6 +76,11 @@
       opacity: 1;
       visibility: visible;
       height: max-content;
+      padding-top: 30px;
+
+      @include vp-767 {
+        padding-top: 20px;
+      }
     }
   }
 }
